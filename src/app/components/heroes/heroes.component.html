@@ -4,7 +4,8 @@
 <div class="card-columns row">
 
 	<div class="card my-2 mx-2" style="width: 18rem;" *ngFor="let heroe of heroes">
-		<img [src]="heroe.img" class="card-img-top img-fluid" [alt]="heroe.nombre">
+		<img [src]="heroe.img" class="card-img-top img-fluid" a
+		lt="heroe.nombre">
 		<div class="card-body">
 			<h5 class="card-title">{{ heroe.nombre }}</h5>
 			<p class="card-text">{{ heroe.bio }}</p>
