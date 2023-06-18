@@ -1,1 +1,52 @@
-<p>heroe works!</p>
+
+<div class="container">
+	<h2 class="animated fadeIn fast text-center">
+		{{ heroe.nombre }}
+	</h2>
+	<br>
+	
+		<div class="row">
+		
+			<div 
+				class="card my-2 mx-2 animated fadeIn fast" 
+				style="width: 18rem;"
+			>
+				<img 
+					[src]="heroe.img" 
+					class="card-img-top img-fluid" 
+					alt="heroe.nombre"
+				>
+
+				<div class="card-body">
+					<p class="card-text">Creado:</p>
+					<p>{{ heroe.casa }}</p>
+					<hr>
+					<p>{{ heroe.bio }}</p>
+
+					<p class="card-text">Primera aparicion:</p>
+					<small 
+						class="card-text">{{ heroe.aparicion }}
+					</small>
+					<hr>
+
+					<a 
+						[routerLink]="['/heroes']" 
+						class="btn btn-outline-danger btn-lg">Atras
+					</a>
+
+				</div>
+			</div>
+
+			<div 
+				class="card my-2 mx-2 animated fadeIn fast" 
+				style="width: 50rem;"
+			>
+				<img 
+					[src]="heroe.arte" 
+					class="img-fluid" 
+					alt="heroe.arte"
+				>
+		
+			</div>
+	</div>
+</div>
