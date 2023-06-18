@@ -11,14 +11,12 @@ export class HeroesComponent implements OnInit {
   heroes:Heroe[] = [];
 
   constructor( private _heroesService:HeroesService  ){
-    console.log("desde constructor");
+    //console.log("desde constructor");
   }
 
   ngOnInit(){
     this.heroes = this._heroesService.getHeroes();
-
-    console.log( this.heroes );
-   
-  }
+    //console.log( this.heroes );
+   }
 
 }
