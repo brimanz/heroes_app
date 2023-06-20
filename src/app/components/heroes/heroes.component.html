@@ -3,15 +3,25 @@
 
 <div class="card-columns row">
 
-	<div class="card my-2 mx-2 animated fadeIn fast" style="width: 18rem;" *ngFor="let heroe of heroes; let i = index">
-		<img [src]="heroe.img" class="card-img-top img-fluid" a
-		lt="heroe.nombre">
+	<div 
+		class="card my-2 mx-2 animated fadeIn fast" 
+		style="width: 18rem;" 
+		*ngFor="let heroe of heroes; let i = index"
+	>
+
+		<img 
+			[src]="heroe.img" 
+			class="card-img-top img-fluid" 
+			alt="heroe.nombre"
+		>
+		
 		<div class="card-body">
 			<h5 class="card-title">{{ heroe.nombre }}</h5>
 			<small class="card-text">{{ heroe.aparicion }}</small> 
 			<hr>
 
 			<a [routerLink]="['/heroe', i]"  class="btn btn-outline-primary btn-lg">Ver mas...</a>
+	
 		</div>
 	</div>
 
