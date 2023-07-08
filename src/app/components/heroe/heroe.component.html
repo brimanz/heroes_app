@@ -1,7 +1,7 @@
 
 <div class="container">
 	<h2 class="animated fadeIn fast text-center">
-		{{ heroe.nombre }}
+		{{ heroe.nombre | uppercase}}
 	</h2>
 	<br>
 	
@@ -25,7 +25,7 @@
 
 					<p class="card-text">Primera aparicion:</p>
 					<small 
-						class="card-text">{{ heroe.aparicion }}
+						class="card-text">({{ heroe.aparicion | date:"y" }})
 					</small>
 					<hr>
 
