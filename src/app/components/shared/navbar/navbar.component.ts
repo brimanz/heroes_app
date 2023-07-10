@@ -7,11 +7,13 @@ import { Component, OnInit } from '@angular/core';
 export class NavbarComponent {
 
   constructor() {
-
   }
 
   ngOnInit(){
+  }
 
+  heroSearch(termino:string){
+    console.log(termino);
   }
 
 }
